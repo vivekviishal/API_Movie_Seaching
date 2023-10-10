@@ -1,7 +1,7 @@
 function searchMovie() {
     var apiKey = 'a2cb1f14';
     var movieTitle = document.getElementById('searchInput').value;
-    var apiUrl = 'http://www.omdbapi.com/?apikey=' + apiKey + '&t=' + movieTitle;
+    var apiUrl = 'https://www.omdbapi.com/?apikey=' + apiKey + '&t=' + movieTitle;
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', apiUrl, true);
@@ -43,7 +43,7 @@ var searchInput = document.getElementById('searchInput');
 
 function searchMovieSuggestions() {
     var searchTerm = searchInput.value;
-    var apiUrl = 'http://www.omdbapi.com/?apikey=a2cb1f14&s=' + searchTerm;
+    var apiUrl = 'https://www.omdbapi.com/?apikey=a2cb1f14&s=' + searchTerm;
 
     fetch(apiUrl)
         .then(response => response.json())
