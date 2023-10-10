@@ -65,7 +65,6 @@ function displaySuggestions(suggestions) {
             suggestionDiv.addEventListener('click', function () {
                 searchInput.value = suggestion.Title;
                 suggestionsDiv.innerHTML = '';
-                searchMovie();
             });
             suggestionsDiv.appendChild(suggestionDiv);
         });
