@@ -1,0 +1,27 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Movie Search</h1>
+        <div class="movieSearch">
+            <div class="input">
+                <input type="text" id="searchInput" placeholder="Enter a movie title"
+                    oninput="searchMovieSuggestions()">
+                <div id="suggestions"></div>
+            </div>
+            <button class="SeachButton" onclick="searchMovie()">Search</button>
+        </div>
+        <div id="movieInfo"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
